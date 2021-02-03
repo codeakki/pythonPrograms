@@ -1,11 +1,16 @@
-favLang = {}
-a = input("Enter your favorite language Shubham\n")
-b = input("Enter your favorite language Ankit\n")
-c = input("Enter your favorite language Sonali\n")
-d = input("Enter your favorite language Harshita\n")
-favLang['shubham'] = a
-favLang['ankit'] = b
-favLang['sonali'] = c
-favLang['harshita'] = d
+marks = int(input("Enter Your Marks\n"))
 
-print(favLang)
+if marks>=90:
+    grade = "Ex"
+elif marks>=80:
+    grade = "A"
+elif marks>=70:
+    grade = "B"
+elif marks>=60:
+    grade = "C"
+elif marks>=50:
+    grade = "D" 
+else:
+    grade = "F"
+
+print("Your grade is " + grade)

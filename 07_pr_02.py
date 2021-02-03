@@ -1,11 +1,10 @@
-num1 = int(input("Enter number 1\n"))
-num2 = int(input("Enter number 2\n"))
-num3 = int(input("Enter number 3\n"))
-num4 = int(input("Enter number 4\n"))
-num5 = int(input("Enter number 5\n"))
-num6 = int(input("Enter number 6\n"))
-num7 = int(input("Enter number 7\n"))
-num8 = int(input("Enter number 8\n"))
+sub1 = int(input("Enter first subject marks\n"))
+sub2 = int(input("Enter second subject marks\n"))
+sub3 = int(input("Enter third subject marks\n"))
 
-s = {num1, num2, num3, num4, num5, num6, num7, num8}
-print(s)
+if(sub1<33 or sub2<33 or sub3<33):
+    print("You are fail because you have less than 33% in one of the subjects")
+elif(sub1+sub2+sub3)/3 < 40:
+    print("You are fail due to total percentage less than 40")
+else:
+    print("Congatulations! You passed the exam")

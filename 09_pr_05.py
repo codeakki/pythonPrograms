@@ -1,5 +1,7 @@
-letter = "Dear Harry, This Python course is nice! Thanks!"
-print(letter)
+names = ["harry", "shubham", "rohit", "rohan", "aditi", "shipra"]
+name = input("Enter the name to check\n")
 
-formatted_letter = "Dear Harry,\n\tThis Python course is nice!\nThanks!"
-print(formatted_letter)
+if name in names:
+    print("Your name is present in the list")
+else:
+    print("Your name is not present in the list")
